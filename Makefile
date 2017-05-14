@@ -1,5 +1,8 @@
 .PHONY: test deps
 
+run:
+	PYTHONPATH=. FLASK_APP=hello_world flask run
+
 deps:
 		pip install -r requirements.txt;\
 		pip install -r test_requirements.txt
